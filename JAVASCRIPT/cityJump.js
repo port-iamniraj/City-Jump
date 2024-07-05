@@ -19,18 +19,18 @@ class Player {
         };
         this.width = 66;
         this.height = 150;
-        this.image = createImage('../IMAGES/Sprites/spriteStandRight.png');
+        this.image = createImage('./IMAGES/Sprites/spriteStandRight.png');
         this.frames = 0;
         this.sprites = {
             stand: {
-                right: createImage('../IMAGES/Sprites/spriteStandRight.png'),
-                left: createImage('../IMAGES/Sprites/spriteStandLeft.png'),
+                right: createImage('./IMAGES/Sprites/spriteStandRight.png'),
+                left: createImage('./IMAGES/Sprites/spriteStandLeft.png'),
                 cropWidth: 177,
                 width: 66
             },
             run: {
-                right: createImage('../IMAGES/Sprites/spriteRunRight.png'),
-                left: createImage('../IMAGES/Sprites/spriteRunLeft.png'),
+                right: createImage('./IMAGES/Sprites/spriteRunRight.png'),
+                left: createImage('./IMAGES/Sprites/spriteRunLeft.png'),
                 cropWidth: 341,
                 width: 127.875
             }
@@ -138,8 +138,8 @@ const keys = {
 let scrollOfset = 0;
 
 function init() {
-    platformImage = createImage('../IMAGES/Platforms/platform.png');
-    platformSmallTallImage = createImage('../IMAGES/Platforms/platformSmallTall.png');
+    platformImage = createImage('./IMAGES/Platforms/platform.png');
+    platformSmallTallImage = createImage('./IMAGES/Platforms/platformSmallTall.png');
 
     player = new Player();
     platforms = [
@@ -184,12 +184,12 @@ function init() {
         new GenericObject({
             x: 0,
             y: 0,
-            image: createImage('../IMAGES/Platforms/background.png')
+            image: createImage('./IMAGES/Platforms/background.png')
         }),
         new GenericObject({
             x: 0,
             y: 0,
-            image: createImage('../IMAGES/Platforms/hills.png')
+            image: createImage('./IMAGES/Platforms/hills.png')
         }),
     ];
 
